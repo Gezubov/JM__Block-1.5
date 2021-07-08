@@ -76,9 +76,16 @@ body {
 .swiper-pagination-bullet-active {
   background: #b5b6bc;
 }
-.button {
+.button-append,
+.button-hide {
   display: flex;
   align-items: center;
+}
+.button__text {
+  font-family: "TTLakes-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 .button__img {
   margin-right: 15px;
