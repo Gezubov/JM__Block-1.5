@@ -1,5 +1,5 @@
-var swiper= Swiper;
-var init = false;
+let swiper= Swiper;
+let init = false;
 
 let swiperMode = () => {
     let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
