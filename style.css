@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url("asserts/fonts/TTLakes-Regular.woff");
+}
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url("asserts/fonts/TTLakes-Medium.woff");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background: #f8f8f8;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #d9fff5;
+}
+.header {
+  padding: 16px;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+.header__title {
+  margin: 0;
+  color: #7e7e82;
+  text-transform: uppercase;
+  font-family: "TTLakes-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.swiper-slide {
+  width: 240px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: #eaeaea solid 1px;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.slider__link {
+  text-decoration: none;
+}
+
+.swiper-container {
+  padding: 16px;
+  width: 100vw;
+  min-height: 135px;
+}
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  background: #dddddd;
+}
+.swiper-pagination-bullet-active {
+  background: #b5b6bc;
+}
+.button {
+  display: flex;
+  align-items: center;
+}
+.button__img {
+  margin-right: 15px;
+}
+.button.hidden {
+  display: none;
+}
+
+/******************* 320 *******************/
+
+@media (min-width: 320px) {
+  .append {
+    display: none;
+  }
+}
+
+/******************* 768 *******************/
+
+@media (min-width: 768px) {
+  .header {
+    padding-left: 24px;
+  }
+  .slider {
+    padding: 0;
+    height: 200px;
+    overflow: hidden;
+  }
+  .slider--open {
+    height: fit-content;
+  }
+  .slider__wrapper {
+    padding: 24px;
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .slider__element {
+    margin-bottom: 16px;
+    margin-right: 24px;
+    width: 224px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #eaeaea solid 1px;
+    border-radius: 6px;
+    padding: 16px;
+    background-color: #ffffff;
+    list-style: none;
+  }
+  .append {
+    display: block;
+    margin-left: 24px;
+    margin-bottom: 30px;
+  }
+  .button {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+  }
+}
+
+/******************* 1120 *******************/
+
+@media (min-width: 1120px) {
+  .slider__element {
+    width: 240px;
+  }
+}
