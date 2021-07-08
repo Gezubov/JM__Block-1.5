@@ -45,17 +45,21 @@ body {
 .swiper-slide {
   width: 240px;
   height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border: #eaeaea solid 1px;
   border-radius: 6px;
-  padding: 16px;
+
   background-color: #ffffff;
   list-style: none;
 }
 
 .slider__link {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -76,7 +80,8 @@ body {
 .swiper-pagination-bullet-active {
   background: #b5b6bc;
 }
-.button-append,
+/* кнопки скрыть/показать */
+.button-show,
 .button-hide {
   display: flex;
   align-items: center;
@@ -93,11 +98,14 @@ body {
 .button.hidden {
   display: none;
 }
+.click {
+  cursor: pointer;
+}
 
 /******************* 320 *******************/
 
 @media (min-width: 320px) {
-  .append {
+  .show {
     display: none;
   }
 }
@@ -110,11 +118,11 @@ body {
   }
   .slider {
     padding: 0;
-    height: 200px;
+    max-height: 200px;
     overflow: hidden;
   }
   .slider--open {
-    height: fit-content;
+    max-height: fit-content;
   }
   .slider__wrapper {
     padding: 24px;
@@ -134,11 +142,10 @@ body {
     justify-content: space-between;
     border: #eaeaea solid 1px;
     border-radius: 6px;
-    padding: 16px;
     background-color: #ffffff;
     list-style: none;
   }
-  .append {
+  .show {
     display: block;
     margin-left: 24px;
     margin-bottom: 30px;
