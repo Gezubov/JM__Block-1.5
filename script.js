@@ -24,7 +24,6 @@ let swiperMode = () => {
                     }
             });
         }
-
     }
 
     // Disable (for tablet)
